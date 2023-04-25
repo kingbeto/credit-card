@@ -11,7 +11,7 @@ class Naranja extends Card implements CreditCard
      *
      * @var string
      */
-    public static $pattern = '/^(589562|402917|402918|527571|527572)[0-9]*$/';
+    public static $pattern = '/^(589562|402917|402918|527571|527572)/';
 
     /**
      * Credit card type.
@@ -32,7 +32,7 @@ class Naranja extends Card implements CreditCard
      *
      * @var string
      */
-    protected $brand = 'Naranja';
+    protected $brand = 'Tarjeta Naranja';
 
     /**
      * Card number length's.
@@ -54,4 +54,26 @@ class Naranja extends Card implements CreditCard
      * @var bool
      */
     protected $checksum_test = true;
+
+
+    /**
+     * @return bool
+     */
+    protected function checksumTest()
+    {
+        // The Luhn Algorithm. It's so pretty.
+        $nCheck = 0;
+        $bEven = false;
+        $value = preg_replace('/\D/', '', $this->card_number);
+        for ($n = strlen($value) - 1; $n >= 0; $n--) {
+            $cDigit = $value[$n];
+            $nDigit = intval($cDigit);
+            if ($bEven && ($nDigit *= 2) > 9) {
+                $nDigit -= 9;
+            }
+            $nCheck += $nDigit;
+            $bEven = !$bEven;
+        }
+        return $nCheck % 10 == 0;
+    }
 }

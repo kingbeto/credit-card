@@ -23,12 +23,12 @@ abstract class BaseCardTests extends TestCase
     public $instance;
 
     protected $available_cards = [
-        // Firs debit cards
+        // Debit cards
         DankortTest::class,
         ForbrugsforeningenTest::class,
         MaestroTest::class,
         VisaElectronTest::class,
-        // Debit cards
+        // Credit cards
         AmericanExpressTest::class,
         DinersClubTest::class,
         DiscoveryTest::class,
@@ -38,6 +38,7 @@ abstract class BaseCardTests extends TestCase
         UnionPayTest::class,
         VisaTest::class,
         MirTest::class,
+        NaranjaTest::class,
     ];
 
     /** @test **/
