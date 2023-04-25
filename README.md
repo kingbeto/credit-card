@@ -4,35 +4,16 @@
 
 This fork adds Tarjeta Naranja to the list of credit cards validators.
 
+Check the original package here: <https://github.com/laravel-validation-rules/credit-card>
+
 ## Introduction
 
 This rule will validate that a given credit card **number**, **expiration date** or **cvc** is valid.
 
-<p align="center">
-  <a href="https://travis-ci.org/laravel-validation-rules/credit-card">
-    <img src="https://img.shields.io/travis/laravel-validation-rules/credit-card.svg?style=flat-square">
-  </a>
-  <a href="https://scrutinizer-ci.com/g/laravel-validation-rules/credit-card/code-structure/master/code-coverage">
-    <img src="https://img.shields.io/scrutinizer/coverage/g/laravel-validation-rules/credit-card.svg?style=flat-square">
-  </a>
-  <a href="https://scrutinizer-ci.com/g/laravel-validation-rules/credit-card">
-    <img src="https://img.shields.io/scrutinizer/g/laravel-validation-rules/credit-card.svg?style=flat-square">
-  </a>
-  <a href="https://github.com/laravel-validation-rules/credit-card/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/laravel-validation-rules/credit-card.svg?style=flat-square">
-  </a>
-  <a href="https://packagist.org/packages/laravel-validation-rules/credit-card">
-      <img src="https://img.shields.io/packagist/dt/laravel-validation-rules/credit-card.svg?style=flat-square">
-  </a>
-  <a href="https://twitter.com/DarkaOnLine">
-    <img src="http://img.shields.io/badge/author-@DarkaOnLine-blue.svg?style=flat-square">
-  </a>
-</p>
-
 ## Installation
 
 ```bash
-composer require laravel-validation-rules/credit-card
+composer require kingbeto/credit-card
 ```
 
 ## Usage
@@ -137,7 +118,7 @@ LVR\CreditCard\Cards\Card::isValidCvcLength($cvc);
 
 ### License
 This project is licensed under an Apache 2.0 license which you can find
-[in this LICENSE](https://github.com/laravel-validation-rules/credit-card/blob/master/LICENSE).
+[in this LICENSE](https://github.com/kingbeto/credit-card/blob/master/LICENSE).
 
 
 ### Feedback
