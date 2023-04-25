@@ -9,9 +9,6 @@ class DiscoveryTest extends BaseCardTests
 {
     public $instance = Discovery::class;
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function validNumbers(): Collection
     {
         return collect([
@@ -28,9 +25,6 @@ class DiscoveryTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidLength(): Collection
     {
         return collect([
@@ -40,9 +34,6 @@ class DiscoveryTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidCheckSum(): Collection
     {
         return collect([

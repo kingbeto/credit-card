@@ -9,9 +9,6 @@ class TroyTest extends BaseCardTests
 {
     public $instance = Troy::class;
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function validNumbers(): Collection
     {
         return collect([
@@ -22,9 +19,6 @@ class TroyTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidLength(): Collection
     {
         return collect([
@@ -34,9 +28,6 @@ class TroyTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidCheckSum(): Collection
     {
         return collect([

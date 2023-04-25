@@ -10,8 +10,11 @@ use LVR\CreditCard\Exceptions\CreditCardLengthException;
 class CardNumber implements Rule
 {
     const MSG_CARD_INVALID = 'validation.credit_card.card_invalid';
+
     const MSG_CARD_PATTER_INVALID = 'validation.credit_card.card_pattern_invalid';
+
     const MSG_CARD_LENGTH_INVALID = 'validation.credit_card.card_length_invalid';
+
     const MSG_CARD_CHECKSUM_INVALID = 'validation.credit_card.card_checksum_invalid';
 
     protected $message = '';

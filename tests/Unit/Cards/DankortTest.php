@@ -9,9 +9,6 @@ class DankortTest extends BaseCardTests
 {
     public $instance = Dankort::class;
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function validNumbers(): Collection
     {
         return collect([
@@ -19,9 +16,6 @@ class DankortTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidLength(): Collection
     {
         return collect([
@@ -31,9 +25,6 @@ class DankortTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidCheckSum(): Collection
     {
         return collect([

@@ -9,9 +9,6 @@ class VisaElectronTest extends BaseCardTests
 {
     public $instance = VisaElectron::class;
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function validNumbers(): Collection
     {
         return collect([
@@ -22,9 +19,6 @@ class VisaElectronTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidLength(): Collection
     {
         return collect([
@@ -34,9 +28,6 @@ class VisaElectronTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidCheckSum(): Collection
     {
         return collect([

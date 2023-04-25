@@ -9,9 +9,6 @@ class ForbrugsforeningenTest extends BaseCardTests
 {
     public $instance = Forbrugsforeningen::class;
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function validNumbers(): Collection
     {
         return collect([
@@ -19,9 +16,6 @@ class ForbrugsforeningenTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidLength(): Collection
     {
         return collect([
@@ -31,9 +25,6 @@ class ForbrugsforeningenTest extends BaseCardTests
         ]);
     }
 
-    /**
-     * @return \Illuminate\Support\Collection
-     */
     public function numbersWithInvalidCheckSum(): Collection
     {
         return collect([

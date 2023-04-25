@@ -22,10 +22,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type;
+
                 protected $name;
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -40,10 +45,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type = 'new';
+
                 protected $name;
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -58,10 +68,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type = 'debit';
+
                 protected $name;
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -78,10 +93,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type = 'credit';
+
                 protected $name;
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -102,10 +122,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type = 'credit';
+
                 protected $name;
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -122,10 +147,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type = 'credit';
+
                 protected $name = ['name'];
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -142,10 +172,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -166,10 +201,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern;
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -186,10 +226,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = ['array'];
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -206,10 +251,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -230,10 +280,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -250,10 +305,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = 16;
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -270,10 +330,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = [16];
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -294,10 +359,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = [16];
+
                 protected $cvc_length;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -314,10 +384,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = [16];
+
                 protected $cvc_length = 3;
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -334,10 +409,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = [16];
+
                 protected $cvc_length = [3, 4];
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -358,10 +438,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = [16];
+
                 protected $cvc_length = [4];
+
                 protected $checksum_test;
             };
             new $newCard;
@@ -378,10 +463,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = [16];
+
                 protected $cvc_length = [3];
+
                 protected $checksum_test = 'true';
             };
             new $newCard;
@@ -398,10 +488,15 @@ class NewCardImplementationTest extends TestCase
             $newCard = new class extends Card
             {
                 public static $pattern = '/^123/';
+
                 protected $type = 'credit';
+
                 protected $name = 'gold';
+
                 protected $number_length = [16];
+
                 protected $cvc_length = [3, 4];
+
                 protected $checksum_test = true;
             };
             new $newCard;

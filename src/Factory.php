@@ -12,6 +12,7 @@ use LVR\CreditCard\Cards\Jcb;
 use LVR\CreditCard\Cards\Maestro;
 use LVR\CreditCard\Cards\Mastercard;
 use LVR\CreditCard\Cards\Mir;
+use LVR\CreditCard\Cards\Naranja;
 use LVR\CreditCard\Cards\Troy;
 use LVR\CreditCard\Cards\UnionPay;
 use LVR\CreditCard\Cards\Visa;
@@ -21,12 +22,12 @@ use LVR\CreditCard\Exceptions\CreditCardException;
 class Factory
 {
     protected static $available_cards = [
-        // Firs debit cards
+        // Debit cards
         Dankort::class,
         Forbrugsforeningen::class,
         Maestro::class,
         VisaElectron::class,
-        // Debit cards
+        // Credit cards
         AmericanExpress::class,
         DinersClub::class,
         Discovery::class,
@@ -37,6 +38,7 @@ class Factory
         Visa::class,
         Mir::class,
         Troy::class,
+        Naranja::class,
     ];
 
     /**

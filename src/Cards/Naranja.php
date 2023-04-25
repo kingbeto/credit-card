@@ -26,7 +26,7 @@ class Naranja extends Card implements CreditCard
      * @var string
      */
     protected $name = 'naranja';
-    
+
     /**
      * Brand name.
      *
