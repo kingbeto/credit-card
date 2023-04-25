@@ -1,4 +1,10 @@
-# Laravel Validator Rules - Credit Card
+# Laravel Validator Rules - Credit Card (King Beto Fork)
+
+## About this fork
+
+This fork adds Tarjeta Naranja to the list of credit cards validators.
+
+## Introduction
 
 This rule will validate that a given credit card **number**, **expiration date** or **cvc** is valid.
 
