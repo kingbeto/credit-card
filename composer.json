@@ -1,5 +1,5 @@
 {
-    "name": "laravel-validation-rules/credit-card",
+    "name": "kingbeto/credit-card",
     "description": "Validate credit card number, expiration date, cvc",
     "type": "library",
     "keywords": [
